@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.lenovo.hikerswatch.MainActivity">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/background"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        android:id="@+id/imageView"
+        android:scaleType="fitXY"
+        android:padding="0dp" />
+
+    <TextView
+        android:text="Hiker's Watch"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="21dp"
+        android:id="@+id/textView"
+        android:textSize="24sp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:textColor="@android:color/background_dark" />
+
+    <TextView
+        android:text="Latitude:"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="72dp"
+        android:id="@+id/latTextView"
+        android:textColor="@android:color/background_light"
+        android:textSize="@dimen/activity_horizontal_margin" />
+
+    <TextView
+        android:text="Longitude:"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/latTextView"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="8dp"
+        android:id="@+id/lonTextView"
+        android:textColor="@android:color/background_light"
+        android:textSize="@dimen/activity_horizontal_margin" />
+
+    <TextView
+        android:text="Accuracy:"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/lonTextView"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="12dp"
+        android:id="@+id/accTextView"
+        android:textColor="@android:color/background_light"
+        android:textSize="@dimen/activity_horizontal_margin" />
+
+    <TextView
+        android:text="Altitude:"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/accTextView"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="12dp"
+        android:id="@+id/altTextView"
+        android:textColor="@android:color/background_light"
+        android:textSize="@dimen/activity_horizontal_margin" />
+
+    <TextView
+        android:text="Address:"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/altTextView"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="12dp"
+        android:id="@+id/addressTextView"
+        android:textColor="@android:color/background_light"
+        android:textSize="@dimen/activity_horizontal_margin" />
+</RelativeLayout>
